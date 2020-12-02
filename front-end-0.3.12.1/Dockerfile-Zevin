@@ -1,0 +1,7 @@
+FROM weaveworksdemos/front-end:0.3.12
+
+# for new urls
+COPY ./api/endpoints.js /usr/src/app/api/endpoints.js
+
+# Start the app
+CMD ["/usr/local/bin/npm", "start"]
